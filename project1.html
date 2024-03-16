@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+         background-image:linear-gradient(to bottom right, #421545,#165465); 
+        
+      }
+      @media only screen and (max-width:  1250px) {
+        .main {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        gap: 23vw;
+      }
+      
+      /* form {
+        box-shadow: rgba(0, 0, 0, 0.298039) 0px  10px 20px -10px ;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+      } */
+      .box1 {
+        width: 50vh;
+        height: 50vh;
+        border-radius: 15px;
+        /* background-image: linear-gradient(
+          to bottom right,
+          rgb(66, 134, 211),
+          rgb(10, 8, 139)
+          
+        ); */
+        box-shadow: 3px 6px 12px rgba(110, 108, 108, 0.9);
+
+        /* box-shadow: inset 3px 6px 12px rgba(110, 108, 108, 0.9); */
+      }
+      .box2 {
+        width: 50vh;
+        height: 50vh;
+        border-radius: 25px;
+        
+        box-shadow: 3px 6px 12px rgba(110, 108, 108, 0.9);
+      }
+      .box2 img {
+        border-radius: 23px;
+      }
+      .h1 {
+        font-size: 33px;
+        font-family: sans-serif;
+        color: aqua;
+        font-weight: 700;
+        margin: 0px 23px;
+        /* background-color: blue; */
+        /* text-align: center; */
+        padding: 23px;
+        border-radius: 23px;
+        margin-top: 23px;
+      }
+      #login {
+        margin: 0px 11px;
+        padding: 8px 15px;
+        display: flex;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        /* box-shadow: 0px 0px 3px black; */
+        font-size: 15px;
+        box-sizing: border-box;
+  border: none;
+  
+      }
+      .btn{
+        
+        padding: 5px 5px;
+        border-radius: 10px;
+        color: white;
+        background-image: linear-gradient(to right,#ff6347 ,#ee39ac);
+        margin: 5px 80px;
+      }
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.footer-distributed{
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+  
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 8px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+    
+      
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box1">
+        <form  action="/register" method="post">
+          <div class="h1">Login Form</div>
+          
+            <input
+              type="text"
+              name="email"
+              id="login"
+              placeholder="Enter your email"/>
+              <div class="h1">
+                Password
+              </div>
+              <input
+              type="password"
+              name="login"
+              id="login"
+              placeholder="Enter password"/>
+              <div id ="login">
+          <button class="btn">Submit</button>
+        </div>
+        </form>
+      </div>
+      <div class="box2">
+        <img
+          width="100%"
+          height="100%"
+          src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=900&t=st=1710597019~exp=1710597619~hmac=dfa9b579607ca9203c8e1ac50dd5aa22b6889b50780f83ea18d186a47f1b0574"
+          alt=""
+        />
+      </div>
+    </div>
+    
+    
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>Chandan<span>Inaya@</span></h3>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          
+          <a href="#">Blog</a>
+        
+          <a href="#">Pricing</a>
+        
+          <a href="#">About</a>
+          
+          <a href="#">Faq</a>
+          
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">@chandan Copyright © 2024</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>It,s Chandan</span> Kolkata - 105 </p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+918210221720</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="a@company.com">chandan@company.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook">
+            <img width="100%" height="auto" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="">
+          </i></a>
+          <a href="#"><img width="100%" height="auto" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt=""><i class="fa fa-twitter"></i></a>
+          <a href="#"><img width="100%" height="auto" src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png" alt=""><i class="fa fa-linkedin"></i></a>
+          <a href="#"><img width="100%" height="auto" src="https://www.zilliondesigns.com/blog/wp-content/uploads/Twitter-Old-Logo.jpg" alt=""><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+  </body>
+</html>
