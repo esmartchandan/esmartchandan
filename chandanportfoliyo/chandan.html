@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 99px;
+        background-color: rgb(29, 29, 84);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: wh;
+      }
+
+      nav ul li a:hover {
+        color: rgb(145, 145, 236);
+        font-size: 1.02rem;
+      }
+
+      .main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 40px 80px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .image {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+      }
+      #box {
+        margin: 23px;
+        height: 100px;
+        width: 100px;
+        border: 1px solid red;
+      }
+      #rightsection {
+        margin: 123px;
+        height: 260px;
+        width: 260px;
+        /* border: 1px solid red; */
+        border-radius: 144px;
+        border: none;
+      }
+      #rightsection img {
+        height: 360px;
+        width: 360px;
+        border-radius: 14px;
+      }
+      #rightsection:hover,
+      .profession:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.1);
+      }
+
+      .leftSection .button {
+        padding: 50px 0px;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background-color: #1e2167;
+        color: #e9e9ef;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        text-shadow: #141414;
+      }
+
+      .leftSection {
+        font-size: 2rem;
+        margin: 30px;
+        font-family: cursive;
+      }
+      .name {
+        height: 45px;
+        width: 30px;
+        /* border: 2px solid rebeccapurple; */
+      }
+      /* .name:hover, .profession:hover{
+    transition: all 0.8s ease;
+    transform: scale(1.1);
+} */
+      .a {
+        font-size: 2.5rem;
+        font-family: sans-serif;
+      }
+      .a:hover,
+      .profession:hover {
+        transition: all 0.3s ease;
+        transform: scale(1.8);
+      }
+
+      .hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.5px;
+        margin: 80px 100px;
+      }
+      .grid {
+        width: 100%;
+        height: 100vh;
+      }
+      #qualifecation {
+        padding: 23;
+        margin-left: 33px;
+        color: #999cef;
+      }
+      .item {
+        height: 80vh;
+        width: 40vh;
+        background-color: white;
+        border: 2px solid blue;
+        border-radius: 20px;
+        margin: 75px;
+      }
+      .schooling {
+        margin: 23px;
+        color: #050a9a;
+        font-weight: 710;
+        text-align: center;
+        font-size: 23px;
+        font-family: sans-serif;
+        border-radius: 3px;
+        text-align: center;
+        font-weight: 600;
+        padding-bottom: 36px;
+
+        text-decoration-line: underline;
+      }
+      .Abr {
+        margin: 23px;
+        color: #7175f7;
+        font-weight: 710;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 23px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 6px;
+      }
+      @media screen and (max-width: 1125px) {
+        .grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 6px;
+        }
+      }
+      #btn {
+        padding: 12px;
+        background-color: #1e2167;
+        color: #e9e9ef;
+        border: 2px solid white;
+        border-radius: 23px;
+        font-size: 20px;
+        cursor: pointer;
+        margin-left: 30px;
+        /* text-shadow: #141414; */
+      }
+      #btn:hover,
+      .profession:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.2);
+      }
+      .course {
+        color: #050a9a;
+        font-weight: 710;
+        text-align: center;
+        font-size: 23px;
+        font-family: sans-serif;
+
+        text-align: center;
+        font-weight: 600;
+
+        text-decoration-line: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Chandan's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">contact Me</a></li>
+            <img src="" alt="" />
+          </ul>
+        </div>
+        
+      </nav>
+    </header>
+    <div class="image">
+      <div class="leftSection">
+        Hi,My name is <span class="purple" style="color: blue"> Chandan </span>
+        <div>And I'm a passionate</div>
+        <span id="element" style="color: blue"></span>
+
+        <div class="button">
+          <button class="btn">Downlode Resume</button>
+          <button class="btn">Visit Github</button>
+        </div>
+      </div>
+      <div id="rightsection">
+        <img
+          src="https://d3f1iyfxxz8i1e.cloudfront.net/courses/course_image/f8e15e935890.png"
+          alt=""
+        />
+      </div>
+      <div class="name">
+        <div class="a">
+          <a href="https://www.instagram.com/?hl=en">
+            <img
+              width="100%"
+              height="auto"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <div class="a">
+          <a href="https://www.facebook.com/profile.php?id=100014445213587">
+            <img
+              width="100%"
+              height="auto"
+              src="https://www.techspot.com/images2/downloads/topdownload/2014/05/FacebookMobile.png"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <div class="a">
+          <a href="https://github.com/esmatChandan/">
+            <img
+              width="100%"
+              height="auto"
+              src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Github-desktop-logo-symbol.svg"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <div class="a">
+          <a href="https://twitter.com/esmatChandan">
+            <img
+              width="100%"
+              height="auto"
+              src="https://duet-cdn.vox-cdn.com/thumbor/0x0:3001x2001/750x500/filters:focal(1501x1001:1502x1002):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/24805890/STK160_X_Twitter_008.jpg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+    <u style="color: #999cef">
+      <h1 id="qualifecation">Qualification</h1>
+    </u>
+    <div class="grid">
+      <div class="item">
+        <div class="schooling">Higher Secondary</div>
+        <div class="Abr">Sher Shah College, Sasaram🏫</div>
+        <div class="course">Intermediate</div>
+        <div class="school">
+          <img
+            height="100%"
+            width="100%"
+            src="https://images.shiksha.com/mediadata/images/1598528590phpVgdIZZ.jpeg"
+            alt=""
+          />
+          <button id="btn">Downlode Marksheet</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="schooling">Bachelor Degree</div>
+        <div class="Abr">V.K.S University🏫</div>
+        <div class="course">Bsc Math Honours</div>
+        <div class="school">
+          <img
+            height="100%"
+            width="100%"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2dseLkA6gfmTqMUPIULA8z8_6aI6dgNk-bdLgv2qWJ_3T45u6crxGJ0yPCpLKrGZHBJA&usqp=CAU"
+            alt=""
+          />
+          <button id="btn">Downlode Marksheet</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="schooling">Master Degree</div>
+        <div class="Abr">Brainware University🏫🎓</div>
+        <div class="course">M.C.A</div>
+        <div class="school">
+          <img
+            height="100%"
+            width="100%"
+            src="https://md-sozon.com/wp-content/uploads/2022/12/Indic_Designs_Creative_Logo__4_-removebg-preview-300x300.png"
+            alt=""
+          />
+          <button id="btn">Downlode Marksheet</button>
+        </div>
+      </div>
+    </div>
+    <div class="hr"></div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Graphic Designer",
+          "Video Editor",
+          "Software Testing",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      const image = document.querySelector();
+    </script>
+  </body>
+</html>
